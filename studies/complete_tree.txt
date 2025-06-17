@@ -1,0 +1,22 @@
+stable-diffusion-webui/
+└── extensions/
+    └── advanced-sd2-lora-trainer/
+        ├── scripts/
+        │   ├── lora_trainer_ui.py       # Main script for UI and callbacks
+        │   ├── core/
+        │   │   ├── __init__.py
+        │   │   ├── training_logic.py    # Core training loop and logic
+        │   │   ├── data_handler.py      # Dataset loading, cropping, and preparation
+        │   │   ├── model_management.py  # SD2 model and LoRA handling
+        │   │   └── project_utils.py     # Utility functions
+        │   └── advanced/
+        │       ├── __init__.py
+        │       ├── multi_stage_trainer.py # Logic for multi-LoRA process
+        │       └── dynamic_cropping.py  # Dynamic crop implementation
+        ├── install.py                     # Manages Python dependencies
+        ├── preload.py                     # Optional: for custom command-line args
+        ├── javascript/
+        │   └── custom.js                  # For custom UI interactions
+        ├── localizations/
+        │   └── en.json                    # For UI text translations
+        └── style.css                      # Custom CSS for UI styling
